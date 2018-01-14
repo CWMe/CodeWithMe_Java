@@ -8,8 +8,8 @@ public class Human extends Animal{
 		return SSN;
 	}
 
-	public void setSSN(int sSN) {
-		SSN = sSN;
+	public void setSSN(int ssn) {
+		SSN = ssn;
 	}
 
 	public int getDateofBirth() {

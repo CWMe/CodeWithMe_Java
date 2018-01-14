@@ -6,6 +6,7 @@ public class Bird extends Animal implements Flight {
 	public Bird(int age) {
 		super(age);
 	}
+
 	public void speak(){
 		System.out.println("Ka ka");
 	}

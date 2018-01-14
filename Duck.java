@@ -5,8 +5,16 @@ public class Duck extends Bird implements Flight, Swim {
 		super(age);
 	}
 
-	int flightspeed = 15;
-	int nauticalspeed = 25;
+	private int flightSpeed = 15;
+	private int nauticalSpeed = 25;
+
+	public int getFlightSpeed(){
+		return flightSpeed;
+	}
+
+	public int getNauticalSpeed(){
+		return nauticalSpeed;
+	}
 	
 	public void fly(){ 
 		System.out.println("Flap Flap");
