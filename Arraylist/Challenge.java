@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Arraylist {
+public class Challenge {
 
     public static void main(String[] args) {
         try {

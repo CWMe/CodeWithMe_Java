@@ -1,4 +1,15 @@
-Challenge taken from: https://www.hackerrank.com/challenges/java-list/problem
+# Arraylist Challenge
+
+## How to run
+
+To compile and run
+
+```
+javac Challenge.java
+java Challenge
+```
+
+## Challenge
 
 For this problem, we have  types of queries you can perform on a List:
 
@@ -30,3 +41,5 @@ Sample Output
 ```
 0 1 78 12 23
 ```
+
+Challenge taken from: https://www.hackerrank.com/challenges/java-list/problem
