@@ -7,15 +7,15 @@ The first line will have an integer _n_ denoting the number of entries in the ph
 
 After these, there will be some queries. Each query will contain a person's name. Read the queries until end-of-file.
 
-Constraints:
+_Constraints:_
 A person's name consists of only lower-case English letters and it may be in the format 'first-name last-name' or in the format 'first-name'. Each phone number has exactly 8 digits without any leading zeros.
 
-*Output Format*
+**Output Format**
 For each case, print "Not found" if the person has no entry in the phone book. Otherwise, print the person's name and phone number. See sample output for the exact format.
 
 To make the problem easier, we provided a portion of the code in the editor. You can either complete that code or write completely on your own.
 
-*Sample Input*
+**Sample Input**
 ```
 3
 uncle sam
@@ -29,7 +29,7 @@ uncle tom
 harry
 ```
 
-*Sample Output*
+**Sample Output**
 ```
 uncle sam=99912222
 Not found
