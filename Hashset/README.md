@@ -5,8 +5,8 @@
 To compile and run
 
 ```
-javac Hashset.java
-java Hashset
+javac Challenge.java
+java Challenge
 ```
 
 ## Challenge
