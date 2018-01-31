@@ -2,7 +2,7 @@
 import java.util.*;
 import java.io.*;
 
-class HashmapSolution{
+class Solution{
     public static void main(String []argh)
     {
         try {

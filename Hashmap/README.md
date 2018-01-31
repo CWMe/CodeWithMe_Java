@@ -1,4 +1,15 @@
-Challenge taken from: https://www.hackerrank.com/challenges/phone-book/problem
+# Hashmap Challenge
+
+## How to run
+
+To compile and run
+
+```
+javac Challenge.java
+java Challenge
+```
+
+## Challenge
 
 You are given a phone book that consists of people's names and their phone number. After that you will be given some person's name as query. For each query, print the phone number of that person.
 
@@ -40,3 +51,5 @@ uncle sam=99912222
 Not found
 harry=12299933
 ```
+
+Challenge taken from: https://www.hackerrank.com/challenges/phone-book/problem

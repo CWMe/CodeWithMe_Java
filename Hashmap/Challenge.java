@@ -2,7 +2,7 @@
 import java.util.*;
 import java.io.*;
 
-class Hashmap{
+class Challenge{
     public static void main(String []argh)
     {
         try {
