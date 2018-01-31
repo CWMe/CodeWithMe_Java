@@ -53,3 +53,5 @@ mary anna
 - After taking the third input, you still have two unique pairs.
 - After taking the fourth input, you have three unique pairs: (john,tom), (john, mary) and (mary, anna)
 - After taking the fifth input, you still have three unique pairs.
+
+This Challenge was taken from Challenge taken from https://www.hackerrank.com/challenges/java-hashset/problem
