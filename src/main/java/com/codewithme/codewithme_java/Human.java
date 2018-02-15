@@ -1,3 +1,4 @@
+package com.codewithme.codewithme_java;
 
 public class Human extends Animal{
 

@@ -1,3 +1,4 @@
+package com.codewithme.codewithme_java;
 
 public class Dog extends Animal {
 
@@ -8,6 +9,7 @@ public class Dog extends Animal {
 		super(age);
 	}
 	
+        @Override
 	public void speak(){
 		System.out.println("Woof");
 	}

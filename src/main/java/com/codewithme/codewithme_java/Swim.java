@@ -1,3 +1,4 @@
+package com.codewithme.codewithme_java;
 
 public interface Swim {
 
