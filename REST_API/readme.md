@@ -377,3 +377,62 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
 	}
 
 }```
+
+
+```
+package com.in28minutes.springboot.rest.example;
+
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRegistration;
+
+import org.springframework.web.WebApplicationInitializer;
+import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
+import org.springframework.web.servlet.DispatcherServlet;
+
+public class ApplicationInitializer implements WebApplicationInitializer {
+
+    public void onStartup(ServletContext container) throws ServletException {
+
+        AnnotationConfigWebApplicationContext ctx = new AnnotationConfigWebApplicationContext();
+        ctx.setServletContext(container);
+        ServletRegistration.Dynamic servlet = container.addServlet("dispatcher", new DispatcherServlet(ctx));
+        servlet.setLoadOnStartup(1);
+        servlet.addMapping("/");
+    }
+}
+```package com.in28minutes.springboot.rest.example;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.security.core.AuthenticationException;
+import org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint;
+import org.springframework.stereotype.Component;
+
+@Component
+public class AuthenticationEntryPoint extends BasicAuthenticationEntryPoint {
+
+	@Override
+    public void commence(HttpServletRequest request, HttpServletResponse response, AuthenticationException authEx)
+      throws IOException, ServletException {
+        response.addHeader("WWW-Authenticate", "Basic realm=" +getRealmName());
+        response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
+        PrintWriter writer = response.getWriter();
+        writer.println("HTTP Status 401 - " + authEx.getMessage());
+    }
+
+	@Override
+    public void afterPropertiesSet() throws Exception {
+        setRealmName("DeveloperStack");
+        super.afterPropertiesSet();
+    }
+
+}
+```
+
+
